@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb+srv://admin:admin@cluster0.72x6o.mongodb.net/Users?retryWrites=true&w=majority', { useNewUrlParser: true});
+mongoose.connect('<YOUR_MONGODB_URL>', { useNewUrlParser: true});
 var db = mongoose.connection;
 
 // Added check for DB connection
